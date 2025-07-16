@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BC Tourist Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <aside id="sidebar">
+      <h2>Tourist Spots</h2>
+      <input type="text" id="searchInput" placeholder="Search by name...">
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Nature">Nature</option>
+        <option value="History">History</option>
+        <option value="Attraction">Attraction</option>
+      </select>
+      <ul id="spotList"></ul>
+    </aside>
+
+    <main id="map"></main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
